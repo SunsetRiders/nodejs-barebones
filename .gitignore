@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules
+
+# Logs
+*.log
+
+# App local environment configuration
+.env
+
+# Folder view configuration files
+.DS_Store

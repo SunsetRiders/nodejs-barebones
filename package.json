@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-barebones",
+  "version": "1.0.0",
+  "description": "Structure for a web API using Node.js and Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunsetRiders/nodejs-barebones.git"
+  },
+  "keywords": [
+    "barebones",
+    "express",
+    "node",
+    "structure"
+  ],
+  "author": "Vinicius Covre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunsetRiders/nodejs-barebones/issues"
+  },
+  "homepage": "https://github.com/SunsetRiders/nodejs-barebones#readme"
+}
