@@ -4,7 +4,10 @@
   "description": "Structure for a web API using Node.js and Express.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/app.js",
+    "watch": "nodemon ./bin/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lint": "eslint . --quiet"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,23 @@
   "bugs": {
     "url": "https://github.com/SunsetRiders/nodejs-barebones/issues"
   },
-  "homepage": "https://github.com/SunsetRiders/nodejs-barebones#readme"
+  "homepage": "https://github.com/SunsetRiders/nodejs-barebones#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-x-request-id": "git+https://github.com/SunsetRiders/express-x-request-id.git",
+    "getconfig": "^4.5.0",
+    "logger": "git+https://github.com/SunsetRiders/logger.git",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-config-google": "^0.6.0",
+    "eslint-config-sunset-nodejs": "git+https://git@github.com/SunsetRiders/eslint-config-sunset-nodejs.git",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "nodemon": "^1.18.3"
+  }
 }

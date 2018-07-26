@@ -1,25 +1,16 @@
 const express = require('express');
 const router = new express.Router();
 
-const initialMw = require('../../middlewares/initial');
-const responseValidatorMw = require('../../middlewares/response-validator');
-const jwtAuthMw = require('../../middlewares/jwt-auth');
+const initial = require('../../middlewares/initial');
+const responseValidator = require('../../middlewares/response-validator');
 
-/**
- * Before routes are executed
- */
-router.use(initialMw);
+/* Before routes are executed */
+router.use(initial);
 
-/**
- * Routes goes here
- */
+/* Routes go here */
 router.use('/health', require('./health'));
-router.use('/alpha', jwtAuthMw, require('./alpha'));
-router.use('/beta', jwtAuthMw, require('./beta'));
 
-/**
- * After routes are executed
- */
-router.use(responseValidatorMw);
+/* After routes are executed */
+router.use(responseValidator);
 
 module.exports = router;
