@@ -33,20 +33,15 @@
     "express": "^4.16.3",
     "express-x-request-id": "git+https://github.com/SunsetRiders/express-x-request-id.git",
     "getconfig": "^4.5.0",
-    "logger": "git+https://github.com/SunsetRiders/logger.git",
-    "request": "^2.87.0",
-    "request-promise": "^4.2.2"
+    "logger": "git+https://github.com/SunsetRiders/logger.git"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
     "eslint": "^5.2.0",
     "eslint-config-google": "^0.6.0",
     "eslint-config-sunset-nodejs": "git+https://git@github.com/SunsetRiders/eslint-config-sunset-nodejs.git",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.3",
-    "sinon": "^6.1.4"
+    "nodemon": "^1.18.3"
   }
 }
