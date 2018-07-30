@@ -58,7 +58,7 @@ Structure for a web API using Node.js and Express.js.
     * **v1**: We use folders to separate code from different versions of our API.
   * **services**: Contains files that communicate with external APIs. Name a third-party service, e.g.: Facebook's API, just as `facebook.js`. We use the modules [`request`](https://www.npmjs.com/package/request) and [`request-promise`](https://www.npmjs.com/package/request-promise) to make API requests.
     * **v1**: Versioning also applies here but with the third-party APIs version. E.g.: if Facebook's API uses version 5, we need a `v5` folder.
-* **tests**: Places all the code for testing our API. Remember that for each type of test all the structure is mapped. E.g.: if you are unit testing a file `src/middlewares/foo.js`, there must have the path `src/middlewares/foo.js` inside `/unit` folder.
+* **tests**: Places all the code for testing our API. Remember that for each type of test all the structure is mapped. E.g.: if you are unit testing a file `src/middlewares/foo.js`, there must have the path `src/middlewares/foo.test.js` inside `/unit` folder. Do not forget to name a test file with the suffix `.test.js`.
   * **functional**: Functional tests go here.
   * **integration**: Integration tests go here. Make use of [Sinon.js](http://sinonjs.org/) module.
   * **unit**: Unit tests go here. Make use of [Mocha.js](https://mochajs.org/) and [Chai.js](http://www.chaijs.com/) module.
