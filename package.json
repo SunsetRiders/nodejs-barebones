@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/SunsetRiders/nodejs-barebones#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-x-request-id": "git+https://github.com/SunsetRiders/express-x-request-id.git",
