@@ -63,6 +63,8 @@ Structure for a web API using Node.js and Express.js.
   * **integration**: Integration tests go here. Make use of [Sinon.js](http://sinonjs.org/) module.
   * **unit**: Unit tests go here. Make use of [Mocha.js](https://mochajs.org/) and [Chai.js](http://www.chaijs.com/) module.
 
+*PS:* We use [nyc](https://www.npmjs.com/package/nyc) for code coverage on our unit tests.
+
 ### Code
 
 * **bin/app.js**: Startup file for our API. Sets the middlewares for all the routes.

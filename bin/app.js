@@ -1,12 +1,14 @@
 const config = require('getconfig');
 const Logger = require('logger');
 const expressXRequestId = require('express-x-request-id');
+const bodyParser = require('body-parser');
 const routes = require('../src/routes');
 require('dotenv').config({silent: true});
 
 const express = require('express');
 const app = express();
 
+app.use(bodyParser.json({limit: config.payloadSize}));
 app.use(expressXRequestId.requestMiddleware);
 app.use(expressXRequestId.responseMiddleware);
 app.use(Logger.injectLogger());
