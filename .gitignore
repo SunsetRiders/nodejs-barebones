@@ -9,3 +9,6 @@ node_modules
 
 # Folder view configuration files
 .DS_Store
+
+# Code coverage
+.nyc_output
